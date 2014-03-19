@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mr0-cd-yzT"/>
+                        <viewControllerLayoutGuide type="bottom" id="KFl-dQ-OY4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Raw" translatesAutoresizingMaskIntoConstraints="NO" id="mCj-VF-tKy">
+                                <rect key="frame" x="20" y="52" width="280" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8138085721522097" green="0.90700733418367352" blue="0.83892984862524411" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="gS2-yx-X32"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Encoded" translatesAutoresizingMaskIntoConstraints="NO" id="6TB-Mh-miZ">
+                                <rect key="frame" x="20" y="408" width="280" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81380857220000002" green="0.90700733420000001" blue="0.83892984859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ptn-RI-FdK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laq-qa-Svo">
+                                <rect key="frame" x="20" y="269" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="hP9-jI-QJg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Encode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="encode" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dtu-G5-7JW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jO-B0-fqp">
+                                <rect key="frame" x="220" y="269" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="dRG-Sh-QiG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Decode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="decode" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5ea-2I-ioa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Laq-qa-Svo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="8hB-2s-FJ0"/>
+                            <constraint firstAttribute="trailing" secondItem="6TB-Mh-miZ" secondAttribute="trailing" constant="20" id="D7B-Qe-bav"/>
+                            <constraint firstItem="mCj-VF-tKy" firstAttribute="top" secondItem="mr0-cd-yzT" secondAttribute="bottom" constant="32" id="DZc-GX-enh"/>
+                            <constraint firstItem="6TB-Mh-miZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="KKR-X9-iJL"/>
+                            <constraint firstItem="KFl-dQ-OY4" firstAttribute="top" secondItem="6TB-Mh-miZ" secondAttribute="bottom" constant="10" id="Q1z-YX-miv"/>
+                            <constraint firstItem="mCj-VF-tKy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ZA7-iU-R8v"/>
+                            <constraint firstAttribute="trailing" secondItem="3jO-B0-fqp" secondAttribute="trailing" constant="20" id="aVN-3h-Fa2"/>
+                            <constraint firstAttribute="centerY" secondItem="3jO-B0-fqp" secondAttribute="centerY" id="ic2-MK-4y7"/>
+                            <constraint firstAttribute="trailing" secondItem="mCj-VF-tKy" secondAttribute="trailing" constant="20" id="jL9-Oc-il7"/>
+                            <constraint firstAttribute="centerY" secondItem="Laq-qa-Svo" secondAttribute="centerY" id="uBW-m3-5dg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="encodedTextView" destination="6TB-Mh-miZ" id="vPI-ZS-rT8"/>
+                        <outlet property="rawTextView" destination="mCj-VF-tKy" id="nW8-a9-WvD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
